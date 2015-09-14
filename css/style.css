@@ -153,6 +153,17 @@ Main components
     transform: translateY(0);
     line-height: 70px;
   }
+  .dropdown ul {
+    margin-left: -100px;
+    margin-top: 55px;
+    background: rgba(63, 18, 55, 0.8);
+    z-index: 2;
+    border-radius: 0px;
+    border: 0px;
+  }
+  .dropdown-menu > li > a {
+    color: #fff;
+   }
   .cd-main-nav ul.is-visible {
     -webkit-transform: translateY(0);
     -moz-transform: translateY(0);
@@ -161,8 +172,13 @@ Main components
     transform: translateY(0);
   }
   .cd-main-nav li {
-    display: inline-block;
+    display: inline-flex;
     margin-left: 1em;
+    /*width: 100px;*/
+  }
+  .dropdown-menu li {
+    display: block;
+    width: 90%;
   }
   .cd-main-nav a {
     font-family: 'Open Sans';
@@ -177,6 +193,10 @@ Main components
     font-weight: bold;
     font-size: 20px;
     font-size: 0.975rem;
+  }
+  .dropdown-menu a {
+    font-size: 15px;
+    text-transform: none;
   }
   .no-touch .cd-main-nav a:hover {
     color: #99a478;
